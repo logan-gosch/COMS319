@@ -10,3 +10,7 @@ COM319: Construction of User Interfaces
 * Express
 * MongoDB
 * SQL
+
+<br>
+Partner Projects: <a href='https://github.com/COMS319-Collab'>Collaboration Github Org</a>
+
