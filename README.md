@@ -1,5 +1,5 @@
 # COMS319
-COM319: Construction of User Interfaces
+Construction of User Interfaces
 
 ## Class Topics
 * HTML
