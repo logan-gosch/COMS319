@@ -1,0 +1,19 @@
+{
+  "name": "activity-17",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "express"
+  ],
+  "author": "Logan Gosch",
+  "license": "ISC",
+  "description": "project files for activity 17",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}

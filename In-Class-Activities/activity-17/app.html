@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity17</title>
+  </head>
+  <body>
+    <h1>Get robots</h1>
+    <button id="getRobots" onclick="getRobots()">Show All Robots</button>
+    <div id="robots"></div>
+  </body>
+  <script>
+    
+    let robots = document.getElementById("robots");
+
+    function displayRobots(data) {
+      for(var i = 0; i < data.length; i++){
+        let robot = document.createElement("div");
+        robot.innerHTML = `
+          <h2>${data[i].name}</h2>
+          <p>Robot Name: ${data[i].name}</p>
+          <p>Robot Description: ${data[i].description}</p>
+          <p>Robot Price: ${data[i].price}</p>
+          <img src="${data[i].imageUrl}" alt="${data[i].name}" width="200" height="200">
+        `;
+        robots.appendChild(robot);
+      }
+    }
+
+    function getRobots() {
+      fetch("http://localhost:8081/listRobots")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          displayRobots(data);
+        });
+    }
+    
+  </script>
+</html>
