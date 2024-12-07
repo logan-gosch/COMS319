@@ -13,8 +13,8 @@ app.use("/uploads", express.static("uploads")); // Serve images statically
 const mysql = require("mysql2");
 const db = mysql.createConnection({
   host: "127.0.0.1",
-  user: "Logan",
-  password: "BruhCuhm69*",
+  user: "user",
+  password: "password*",
   database: "secoms3190",
 });
 
